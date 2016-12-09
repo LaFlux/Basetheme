@@ -1,6 +1,6 @@
 # Basetheme for Laflux
 
-Laflux is a Hybrid Platform built with Laravel 5.3. This is the Base thrme for Laflux.
+Laflux is a Hybrid Platform built with Laravel 5.3. This is the Base theme for Laflux.
 
 ## Getting Started
 
