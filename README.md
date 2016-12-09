@@ -29,7 +29,7 @@ composer dumpautoload -o
 If you add this repository as a submodule, you can automatically update the repository, whenever there is a new update.To add this repository as a submodule, go to the root directory of Laflux and run the following command:
 
 ```
-git submodule add https://github.com/LaFlux/Basetheme.git packages/ExtensionsValley/Pages/
+git submodule add https://github.com/LaFlux/Basetheme.git packages/ExtensionsValley/Basetheme/
 
 php artisan vendor:publish 
 composer dumpautoload -o
