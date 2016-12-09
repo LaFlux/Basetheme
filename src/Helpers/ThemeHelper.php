@@ -21,7 +21,7 @@ class ThemeHelper
         if(\Schema::hasTable('extension_manager')){
         $activetheme =  Extension::WhereNull('deleted_at')
                 ->Where('status',1)
-                ->Where('package_type','Theme')
+                ->Where('package_type','laflux-theme')
                 ->first();
         }
 
