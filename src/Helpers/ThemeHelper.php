@@ -22,6 +22,7 @@ class ThemeHelper
         $activetheme =  Extension::WhereNull('deleted_at')
                 ->Where('status',1)
                 ->Where('package_type','laflux-theme')
+                ->Where('name','<>','Basetheme')
                 ->first();
         }
 
