@@ -30,7 +30,7 @@ class ThemeHelper
               $this->active_template_path = "template".$ds.strtolower($activetheme->vendor)
               .$ds.strtolower($activetheme->name);
               $this->active_template_name = strtolower($activetheme->vendor).".".strtolower($activetheme->name);
-              $this->template_view_path = base_path(). '/packages/'.$activetheme->vendor.$ds.$activetheme->name.$ds.'src/Views';
+              $this->template_view_path = base_path(). '/resources/template/'.strtolower($activetheme->vendor).$ds.strtolower($activetheme->name);
               $this->theme_name = $activetheme->name;
               $this->vendor_name = $activetheme->vendor;
 
@@ -38,7 +38,7 @@ class ThemeHelper
 
             $this->active_template_path = "template/extensionsvalley/basetheme";
             $this->active_template_name = "extensionsvalley.basetheme";
-            $this->template_view_path = base_path(). '/packages/template/ExtensionsValley/Basetheme/src/Views';
+            $this->template_view_path = base_path(). '/resources/template/extensionsValley/basetheme';
               $this->theme_name = 'Basetheme';
               $this->vendor_name = 'ExtensionsValley';
         }
