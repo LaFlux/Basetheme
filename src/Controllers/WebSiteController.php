@@ -12,9 +12,7 @@ class WebSiteController extends Controller
 
     public function __construct(ThemeHelper $themehelper)
     {
-
        $this->themeHelper = with(new $themehelper);
-
     }
 
     public function getIndex()

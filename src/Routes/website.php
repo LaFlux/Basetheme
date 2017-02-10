@@ -1,13 +1,13 @@
 <?php
 
 
-Route::group(['middleware' => ['web', 'auth:web']], function () {
+//Route::group(['middleware' => ['web', 'auth:web']], function () {
     Route::get('/', [
         'name' => 'Home Page',
         'as' => 'extensionsvalley.web.home',
         'uses' => 'ExtensionsValley\Basetheme\WebSiteController@getIndex',
     ]);
-});
+//});
 
 Route::group(['middleware' => 'web'], function () {
     Route::get('/submitcontact', [
