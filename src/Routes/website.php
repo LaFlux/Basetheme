@@ -13,8 +13,10 @@ Route::group(['middleware' => 'web'], function () {
         'uses' => 'ExtensionsValley\Basetheme\WebSiteController@SubmitContactform',
     ]);
 
-    if(file_exists(base_path('routes/web.php'))){
-        require base_path('routes/web.php');
-    }
 });
+
+if (file_exists(base_path('routes/web.php'))) {
+    require base_path('routes/web.php');
+}
+
 
